@@ -6,10 +6,12 @@
 
 body {
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
+    /*color: #2c3e50 !important;*/
 }
 
 p.small {
@@ -33,7 +35,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 hr.star-light,
@@ -180,11 +182,33 @@ header .intro-text .skills {
     color: #55504f;
 }
 
+.nostyle {
+    list-style: none;
+}
+
 .logo-img {
     top: -10px !important;
     padding: 0px !important;
     margin: 0px !important;
     height: 60px !important;
+}
+.back {
+    background-image: url("../img/cloud-computing-concept.jpeg");
+    background-size: no-repeat;
+    max-width: auto;
+    height: auto;
+}
+
+.orange {
+    background: rgba(241, 112, 0, 0.7);
+    text-align: center;
+    color: white !important;
+    padding-bottom: 25px;
+    /*margin-bottom: 10px;*/
+}
+
+.list-orange {
+    color: #f17000;
 }
 
 section {
@@ -230,6 +254,7 @@ section.success a.active {
 .program-blocks {
     margin-left: 60px !important;
     margin-right: 60px !important;
+    margin-bottom: 10px;
 }
 
 #portfolio .portfolio-item {
@@ -292,7 +317,7 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    /*border: solid 2px #fff;*/
     font-size: 20px;
     color: #fff;
     background: 0 0;
@@ -303,9 +328,24 @@ section.success a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
+    /*border: solid 2px #fff;*/
     color: #f17000;
     background: #fff;
+}
+
+.transparent {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 2px solid white;
+    min-width: 215px;
+    min-height: 111px;
+    padding: 5px;
 }
 
 .floating-label-form-group {
@@ -373,28 +413,34 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
-    background-color: #2c3e50;
+    padding-top: 40px;
+    background-color: #1b1e24;
 }
 
 footer .footer-col {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 footer .footer-below {
-    padding: 25px 0;
-    background-color: #233140;
+    padding: 20px 0;
+    background-color: #16191f;
+}
+
+.footer-list {
+    text-align: left;
 }
 
 .btn-social {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
+    /*border: 2px solid #fff;*/
     border-radius: 100%;
     text-align: center;
     font-size: 20px;
     line-height: 45px;
+    background-color: #f17000;
+    color: white;
 }
 
 .btn:focus,
