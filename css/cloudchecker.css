@@ -301,8 +301,8 @@ section.success a.active {
 
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
-    width: 87%;
-    height: 100%;
+    max-width: 301px;
+    max-height: 219px;
     opacity: 0;
     background: rgba(245, 190, 126, .7);
     -webkit-transition: all ease .5s;
@@ -312,12 +312,11 @@ section.success a.active {
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 0.5;
-    width: 87%;
+   
 }
 
 .listing-section:hover {
     opacity: 0.5 !important;
-    width: 87%;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -326,6 +325,7 @@ section.success a.active {
     width: 100% !important;
     height: 20px;
     margin-top: -12px;
+    padding: 10px;
     text-align: center;
     font-size: 20px;
     color: #fff;
@@ -350,6 +350,10 @@ section.success a.active {
     }
 }
 
+.empty {
+    margin-top: 100px;
+}
+
 .btn-outline {
     margin-top: 15px;
     /*border: solid 2px #fff;*/
@@ -371,11 +375,12 @@ section.success a.active {
 .button-list {
     display: inline-block;
     list-style: none;
-    padding: 0 60px;
-    margin: 0 20px;
+    padding: 10px 60px;
+    margin-left: -30px;
 }
 
 .know-btn {
+    margin: 0 auto;
     background-color: #f17000; 
     color: white;
 }
@@ -394,9 +399,10 @@ section.success a.active {
     overflow: hidden;
     outline:none;
     border: 2px solid white;
-    min-width: 280px;
-    min-height: 130px;
-    padding: 5px;
+    max-width: 280px;
+    max-height: 130px;
+    padding: 20px;
+    text-align: center;
 }
 
 .transparent:hover {
